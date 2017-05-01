@@ -13,7 +13,7 @@ function jewelGame() {
 
 	//make a random number that with a min equal to the sum of the above var
 	var jewels = jewel1+jewel2+jewel3+jewel4;
-	var goal = Math.floor(Math.random()*(100-jewels))+jewels;
+	var goal = Math.floor(Math.random()*(120-19))+19;
 
 	console.log(jewel1, jewel2, jewel3, jewel4);
 
