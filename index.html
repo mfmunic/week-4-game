@@ -6,56 +6,60 @@
 
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
 	<link rel="stylesheet" type="text/css" href="assets/css/syles.css">
 
 </head>
-<body>
+<body onload="jewelGame()">
 	<div id="centerContainer">
-		<div id="title">Crystal Collector!</div>
+		<div class="jumbotron">
+  			<h1 id="title">Jewel Collector!</h1>
+		</div>
 
 		<div id="instructions">
+			<p><strong>Instructions:</strong></p>
 			<p>You will be given a random number at the start of the game.</p>
-			<p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total scrore.</p>
+			<p>There are four Jewels below.  By clicking on a Jewel you will add a specific amount of points to your total scrore.</p>
 			<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-			<p>The value of each crystal is hidden from you until you click on it.</p>
-			<p>Each time when the game starts, that game will change the values of each crystal.</p>
+			<p>The value of each Jewel is hidden from you until you click on it.</p>
+			<p>Each time when the game starts, that game will change the values of each Jewel.</p>
 		</div>
 
 		<div class="row">
-			<div class="col-md-4">
-				<p id="crystalNo"></p>
+			<div class="col-md-6">
+				<p class="target">Target Number: <span id="crystalNo"></span></p>
 			</div>
-			<div class="col-md-2">
+			<div id="scoreBox" class="col-md-6">
 				<p>Wins:<span id="wins"></span></p>
 				<p>Losses:<span id="losses"></span></p>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col-md-1" id="jewel1">
-				<img src="#">
+			<div class="col-xs-3">
+				<img class="jewels" id="jewel1" value="#" src="assets/images/jewel1.jpg">
 			</div>
-			<div class="col-md-1" id="jewel2">
-				<img src="#">
+			<div class="col-xs-3">
+				<img class="jewels" id="jewel2" src="assets/images/jewel2.jpg">
 			</div>
-			<div class="col-md-1" id="jewel3">
-				<img src="#">
+			<div class="col-xs-3">
+				<img class="jewels" id="jewel3" src="assets/images/jewel3.jpg">
 			</div>
-			<div class="col-md-1" id="jewel4">
-				<img src="#">
+			<div class="col-xs-3">
+				<img class="jewels" id="jewel4" src="assets/images/jewel4.jpg">
 			</div>
 		</div>
 
 		<div>
-			<p>Your total is:</p>
-			<p id="yourTotal"></p>
+			<p class="target">Your total is: <span id="yourTotal"></span></p>
 		</div>
 	</div>
 </body>
 
-<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<scipt src="assets/javascript/game.js"></scipt>
-
+<script type="text/javascript" src="assets/javascript/game.js">
+</script>
 
 </html>

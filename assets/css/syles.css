@@ -1,9 +1,23 @@
 body {
 	background-color: gray;
 }
+
 #centerContainer {
 	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: white;
+}
+
+.jewels {
+	position: relative;
+	height: 100px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+}
+
+.target {
+	font-size: 35px;
 }
