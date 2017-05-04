@@ -1,9 +1,11 @@
 body {
 	background-color: gray;
+	margin-bottom: 0px;
 }
 
 #centerContainer {
 	width: 960px;
+	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: white;
