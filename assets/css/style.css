@@ -12,14 +12,32 @@ body {
 }
 
 .jewels {
-	position: relative;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 150px;
 	height: 100px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	cursor: pointer;
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 0 0 10px white;
 }
 
 .target {
 	font-size: 35px;
+}
+
+#jewel1 {
+	background-image: url("../images/jewel1.jpg");
+}
+
+#jewel2 {
+	background-image: url("../images/jewel2.jpg");
+}
+
+#jewel3 {
+	background-image: url("../images/jewel3.jpg");
+}
+
+#jewel4 {
+	background-image: url("../images/jewel4.jpg");
 }
