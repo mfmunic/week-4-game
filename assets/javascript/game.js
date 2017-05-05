@@ -44,28 +44,24 @@ function jewelGame() {
 $("#jewel1").on("click",function(){
 	guessTotal += jewel1;
 	$("#yourTotal").text(guessTotal);
-	showValue("#jewel1", jewel1);
 	check();
 })//end of onclick 1
 
 $("#jewel2").on("click",function(){
 	guessTotal += jewel2;
 	$("#yourTotal").text(guessTotal);
-	showValue();
 	check();
 })//end of onclick 2
 
 $("#jewel3").on("click",function(){
 	guessTotal += jewel3;
 	$("#yourTotal").text(guessTotal);
-	showValue();
 	check();
 })//end of onclick 3
 
 $("#jewel4").on("click",function(){
 	guessTotal += jewel4;
 	$("#yourTotal").text(guessTotal);
-	showValue();
 	check();
 })//end of onclick 4
 
